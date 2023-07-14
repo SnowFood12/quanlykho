@@ -60,9 +60,6 @@ namespace asm_DangKi
 
                 SqlCommand cmd = new SqlCommand(commet, conn); // khởi tại biến với chuỗi câu lệnh
 
-/*                cmd.Parameters.AddWithValue("@TenDN", txt_TenDangNhap.Text);
-                cmd.Parameters.AddWithValue("@MK", txt_MatKhau.Text);*/
-
                 SqlDataReader reader = cmd.ExecuteReader(); // khởi tạo biến đọc SQL
 
                 if (reader.Read()) // khi biến đang được đọc
